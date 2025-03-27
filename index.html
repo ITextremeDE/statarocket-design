@@ -15,6 +15,7 @@
         />
 
         <!-- META-Informations -->
+        <title>StataRocket Design</title>
 
         <!-- Icons -->
 
@@ -30,7 +31,8 @@
                 <div class="flex items-center justify-between py-2">
                     <!-- Top Bar: Text -->
                     <div class="text-menu dark:text-menu-inverted text-sm">
-                        Schreibe uns eine E-Mail an info@itextreme.de
+                        Write us an E-Mail:
+                        <a href="mailto:hi@itextreme.de">hi@itextreme.de</a>
                     </div>
                     <!-- Top Bar: Social Media & Theme picker -->
                     <div class="flex items-center justify-center gap-x-6">
@@ -85,7 +87,7 @@
                                 id="theme-picker"
                                 :aria-expanded="themePickerOpen"
                                 aria-haspopup="true"
-                                aria-label="Theme"
+                                aria-label="Theme Picker"
                             >
                                 <svg
                                     class="size-4 dark:hidden"
@@ -137,7 +139,7 @@
                                 >
                                     <li
                                         @click="setThemePreference('light'); themePickerOpen = false"
-                                        class="hover:bg-themepicker-bg-hover dark:hover:bg-themepicker-bg-hover-dark flex items-center rounded-md px-4 py-2 text-sm"
+                                        class="hover:bg-themepicker-bg-hover dark:hover:bg-themepicker-bg-hover-dark flex cursor-default items-center rounded-md px-4 py-2 text-sm"
                                         :class="themePreference == 'light' ? 'bg-themepicker-bg-hover text-primary outline-hidden dark:bg-themepicker-bg-dark' : 'text-submenu dark:text-submenu-inverted'"
                                         role="menuitem"
                                         tabindex="-1"
@@ -156,11 +158,11 @@
                                                 d="M7 1a1 1 0 0 1 2 0v1a1 1 0 1 1-2 0V1Zm4 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm2.657-5.657a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm-1.415 11.313-.707-.707a1 1 0 0 1 1.415-1.415l.707.708a1 1 0 0 1-1.415 1.414ZM16 7.999a1 1 0 0 0-1-1h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 1-1ZM7 14a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm-2.536-2.464a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm0-8.486A1 1 0 0 1 3.05 4.464l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707ZM3 8a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Z"
                                             />
                                         </svg>
-                                        <div class="ml-2">Hell</div>
+                                        <div class="ml-2">Light</div>
                                     </li>
                                     <li
                                         @click="setThemePreference('dark'); themePickerOpen = false"
-                                        class="hover:bg-themepicker-bg-hover dark:hover:bg-themepicker-bg-hover-dark flex items-center rounded-md px-4 py-2 text-sm"
+                                        class="hover:bg-themepicker-bg-hover dark:hover:bg-themepicker-bg-hover-dark flex cursor-default items-center rounded-md px-4 py-2 text-sm"
                                         :class="themePreference == 'dark' ? 'outline-hidden dark:text-primary dark:bg-themepicker-bg-hover-dark' : 'text-submenu dark:text-submenu-inverted'"
                                         role="menuitem"
                                         tabindex="-1"
@@ -179,11 +181,11 @@
                                                 d="M7.23 3.333C7.757 2.905 7.68 2 7 2a6 6 0 1 0 0 12c.68 0 .758-.905.23-1.332A5.989 5.989 0 0 1 5 8c0-1.885.87-3.568 2.23-4.668ZM12 5a1 1 0 0 1 1 1 1 1 0 0 0 1 1 1 1 0 1 1 0 2 1 1 0 0 0-1 1 1 1 0 1 1-2 0 1 1 0 0 0-1-1 1 1 0 1 1 0-2 1 1 0 0 0 1-1 1 1 0 0 1 1-1Z"
                                             />
                                         </svg>
-                                        <div class="ml-2">Dunkel</div>
+                                        <div class="ml-2">Dark</div>
                                     </li>
                                     <li
                                         @click="setThemePreference('system'); themePickerOpen = false"
-                                        class="hover:bg-themepicker-bg-hover dark:hover:bg-themepicker-bg-hover-dark flex items-center rounded-md px-4 py-2 text-sm"
+                                        class="hover:bg-themepicker-bg-hover dark:hover:bg-themepicker-bg-hover-dark flex cursor-default items-center rounded-md px-4 py-2 text-sm"
                                         :class="themePreference == 'system' ? 'bg-themepicker-bg-hover text-primary outline-hidden dark:bg-themepicker-bg-hover-dark' : 'text-submenu dark:text-submenu-inverted'"
                                         role="menuitem"
                                         tabindex="-1"

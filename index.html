@@ -1,19 +1,379 @@
 <!doctype html>
 <html
+    data-theme=""
     x-data="htmlData()"
     x-init="window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => setSystemTheme(e.matches ? 'dark' : 'light'))"
-    class="bg-white dark:bg-black"
+    class="bg-body dark:bg-body-dark scroll-smooth antialiased"
     :class="{ dark: darkMode }"
-    lang="en"
+    lang="de"
 >
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body class="bg-white dark:bg-black">
-        <h1 class="text-3xl text-red-700 dark:text-blue-700">Hello World!</h1>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+        />
 
+        <!-- META-Informations -->
+
+        <!-- Icons -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    </head>
+    <body class="bg-body dark:bg-body-dark text-text dark:text-text-inverted">
+        <!-- Header -->
+        <header
+            class="bg-header dark:bg-header-dark fixed inset-x-0 top-0 z-50"
+        >
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <!-- Top Bar -->
+                <div class="flex items-center justify-between py-2">
+                    <!-- Top Bar: Text -->
+                    <div class="text-menu dark:text-menu-inverted text-sm">
+                        Schreibe uns eine E-Mail an info@itextreme.de
+                    </div>
+                    <!-- Top Bar: Social Media & Theme picker -->
+                    <div class="flex items-center justify-center gap-x-6">
+                        <!-- Social Media -->
+                        <div
+                            class="hidden lg:flex lg:justify-center lg:gap-x-4"
+                        >
+                            <a
+                                class="fill-menu hover:fill-menu-hover dark:fill-menu-inverted dark:hover:fill-menu-inverted-hover"
+                                href="#"
+                            >
+                                <span class="sr-only">Facebook</span>
+                                <svg
+                                    class="size-4"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>Facebook</title>
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                class="fill-menu hover:fill-menu-hover dark:fill-menu-inverted dark:hover:fill-menu-inverted-hover"
+                                href="#"
+                            >
+                                <span class="sr-only">Instagram</span>
+                                <svg
+                                    class="size-4"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>Instagram</title>
+                                    <path
+                                        d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- Theme picker -->
+                        <div
+                            x-data="{ themePickerOpen: false }"
+                            class="relative"
+                        >
+                            <button
+                                type="button"
+                                @click="themePickerOpen = ! themePickerOpen"
+                                class="bg-themepicker-icon-bg dark:bg-themepicker-icon-bg-dark rounded-md p-1 shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white"
+                                id="theme-picker"
+                                :aria-expanded="themePickerOpen"
+                                aria-haspopup="true"
+                                aria-label="Theme"
+                            >
+                                <svg
+                                    class="size-4 dark:hidden"
+                                    :class="themePreference != 'system' ? 'fill-primary' : 'fill-themepicker-icon'"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
+                                        d="M7 1a1 1 0 0 1 2 0v1a1 1 0 1 1-2 0V1Zm4 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm2.657-5.657a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm-1.415 11.313-.707-.707a1 1 0 0 1 1.415-1.415l.707.708a1 1 0 0 1-1.415 1.414ZM16 7.999a1 1 0 0 0-1-1h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 1-1ZM7 14a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm-2.536-2.464a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm0-8.486A1 1 0 0 1 3.05 4.464l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707ZM3 8a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Z"
+                                    />
+                                </svg>
+                                <svg
+                                    class="hidden size-4 dark:block"
+                                    :class="themePreference != 'system' ? 'fill-primary' : 'fill-themepicker-icon'"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
+                                        d="M7.23 3.333C7.757 2.905 7.68 2 7 2a6 6 0 1 0 0 12c.68 0 .758-.905.23-1.332A5.989 5.989 0 0 1 5 8c0-1.885.87-3.568 2.23-4.668ZM12 5a1 1 0 0 1 1 1 1 1 0 0 0 1 1 1 1 0 1 1 0 2 1 1 0 0 0-1 1 1 1 0 1 1-2 0 1 1 0 0 0-1-1 1 1 0 1 1 0-2 1 1 0 0 0 1-1 1 1 0 0 1 1-1Z"
+                                    />
+                                </svg>
+                            </button>
+                            <div
+                                x-cloak
+                                x-show="themePickerOpen"
+                                @click.outside="themePickerOpen = false"
+                                @keydown.escape="themePickerOpen = false"
+                                x-transition:enter="transition ease-out duration-100"
+                                x-transition:enter-start="transform opacity-0 scale-95"
+                                x-transition:enter-end="transform opacity-100 scale-100"
+                                x-transition:leave="transition ease-in duration-75"
+                                x-transition:leave-start="transform opacity-100 scale-100"
+                                x-transition:leave-end="transform opacity-0 scale-95"
+                                class="bg-themepicker-bg dark:bg-themepicker-bg-dark absolute right-0 z-10 mt-2 -mr-1 w-32 origin-top-right rounded-md shadow-lg ring-1 ring-black/5 focus:outline-hidden"
+                                role="menu"
+                                aria-orientation="vertical"
+                                aria-labelledby="theme-picker"
+                                tabindex="-1"
+                            >
+                                <ul
+                                    class="flex flex-col gap-y-1 p-1"
+                                    role="none"
+                                >
+                                    <li
+                                        @click="setThemePreference('light'); themePickerOpen = false"
+                                        class="hover:bg-themepicker-bg-hover dark:hover:bg-themepicker-bg-hover-dark flex items-center rounded-md px-4 py-2 text-sm"
+                                        :class="themePreference == 'light' ? 'bg-themepicker-bg-hover text-primary outline-hidden dark:bg-themepicker-bg-dark' : 'text-submenu dark:text-submenu-inverted'"
+                                        role="menuitem"
+                                        tabindex="-1"
+                                        id="theme-picker-light"
+                                    >
+                                        <svg
+                                            class="bg-themepicker-icon-bg dark:bg-themepicker-icon-bg-dark size-6 rounded-md p-1 shadow"
+                                            :class="themePreference == 'light' ? 'fill-primary' : 'fill-themepicker-icon'"
+                                            aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                clipRule="evenodd"
+                                                d="M7 1a1 1 0 0 1 2 0v1a1 1 0 1 1-2 0V1Zm4 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm2.657-5.657a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm-1.415 11.313-.707-.707a1 1 0 0 1 1.415-1.415l.707.708a1 1 0 0 1-1.415 1.414ZM16 7.999a1 1 0 0 0-1-1h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 1-1ZM7 14a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm-2.536-2.464a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm0-8.486A1 1 0 0 1 3.05 4.464l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707ZM3 8a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Z"
+                                            />
+                                        </svg>
+                                        <div class="ml-2">Hell</div>
+                                    </li>
+                                    <li
+                                        @click="setThemePreference('dark'); themePickerOpen = false"
+                                        class="hover:bg-themepicker-bg-hover dark:hover:bg-themepicker-bg-hover-dark flex items-center rounded-md px-4 py-2 text-sm"
+                                        :class="themePreference == 'dark' ? 'outline-hidden dark:text-primary dark:bg-themepicker-bg-hover-dark' : 'text-submenu dark:text-submenu-inverted'"
+                                        role="menuitem"
+                                        tabindex="-1"
+                                        id="theme-picker-dark"
+                                    >
+                                        <svg
+                                            class="bg-themepicker-icon-bg dark:bg-themepicker-icon-bg-dark size-6 rounded-md p-1 shadow"
+                                            :class="themePreference == 'dark' ? 'fill-primary' : 'fill-themepicker-icon'"
+                                            aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                clipRule="evenodd"
+                                                d="M7.23 3.333C7.757 2.905 7.68 2 7 2a6 6 0 1 0 0 12c.68 0 .758-.905.23-1.332A5.989 5.989 0 0 1 5 8c0-1.885.87-3.568 2.23-4.668ZM12 5a1 1 0 0 1 1 1 1 1 0 0 0 1 1 1 1 0 1 1 0 2 1 1 0 0 0-1 1 1 1 0 1 1-2 0 1 1 0 0 0-1-1 1 1 0 1 1 0-2 1 1 0 0 0 1-1 1 1 0 0 1 1-1Z"
+                                            />
+                                        </svg>
+                                        <div class="ml-2">Dunkel</div>
+                                    </li>
+                                    <li
+                                        @click="setThemePreference('system'); themePickerOpen = false"
+                                        class="hover:bg-themepicker-bg-hover dark:hover:bg-themepicker-bg-hover-dark flex items-center rounded-md px-4 py-2 text-sm"
+                                        :class="themePreference == 'system' ? 'bg-themepicker-bg-hover text-primary outline-hidden dark:bg-themepicker-bg-hover-dark' : 'text-submenu dark:text-submenu-inverted'"
+                                        role="menuitem"
+                                        tabindex="-1"
+                                        id="theme-picker-system"
+                                    >
+                                        <svg
+                                            class="bg-themepicker-icon-bg dark:bg-themepicker-icon-bg-dark size-6 rounded-md p-1 shadow"
+                                            :class="themePreference == 'system' ? 'fill-primary' : 'fill-themepicker-icon'"
+                                            aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                clipRule="evenodd"
+                                                d="M1 4a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-1.5l.31 1.242c.084.333.36.573.63.808.091.08.182.158.264.24A1 1 0 0 1 11 15H5a1 1 0 0 1-.704-1.71c.082-.082.173-.16.264-.24.27-.235.546-.475.63-.808L5.5 11H4a3 3 0 0 1-3-3V4Zm3-1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z"
+                                            />
+                                        </svg>
+                                        <div class="ml-2">System</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation -->
+                <nav
+                    class="flex items-center justify-between gap-x-6 py-4"
+                    aria-label="Global"
+                >
+                    <!-- Logo -->
+                    <div class="flex lg:flex-1">
+                        <a class="-m-1.5 p-1.5" href="/">
+                            <span class="sr-only">StataRocket Design</span>
+                            <svg
+                                class="size-10 text-white dark:text-slate-200"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="pt-32 pb-16">
+            <section>
+                <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                    tempora voluptatibus vel ullam! Voluptatum quas ea
+                    blanditiis, dolorem eius dolor libero possimus quia,
+                    perferendis voluptas soluta expedita at voluptatibus nulla
+                    illo distinctio fugit quaerat excepturi? Mollitia eveniet ex
+                    ducimus fugit quisquam officiis, voluptas minima illo
+                    aliquam sunt iure quo quae dolore non odio itaque eum vitae
+                    est error consequatur reprehenderit deserunt qui. Expedita
+                    illum corporis deleniti suscipit accusamus nemo quaerat in
+                    quisquam assumenda? Corporis quia voluptas quibusdam
+                    quisquam libero! Beatae, repellat? In ab molestias ex
+                    mollitia saepe aperiam et quae aut, eius vitae, perspiciatis
+                    qui. Magni, dicta, ab voluptas culpa in suscipit nesciunt
+                    nobis aperiam nostrum perferendis quisquam sed saepe vitae
+                    obcaecati quasi accusantium quos commodi nisi iusto fugiat.
+                    Laboriosam, et nihil? Incidunt alias sapiente distinctio sed
+                    adipisci corporis unde doloremque quidem? Rerum alias,
+                    sapiente veritatis quam culpa, modi maxime est ipsam tenetur
+                    eveniet nulla beatae omnis totam dolores! Odit at tenetur
+                    totam necessitatibus quasi consequuntur provident maiores
+                    aut voluptate dolore? Dolor cum vitae voluptate magnam eos
+                    nisi molestiae corrupti ea, asperiores esse doloribus
+                    temporibus! Pariatur numquam sint eum, maiores, ut,
+                    voluptates tenetur esse dolore doloremque excepturi illum
+                    molestias et reiciendis nam. Suscipit reiciendis provident
+                    error fugit est dicta veniam quisquam soluta iste quia
+                    tempore quibusdam tempora beatae, eos voluptatem quos
+                    reprehenderit fuga expedita magnam minima voluptatum,
+                    similique molestiae enim sequi? Non consequatur dolor minima
+                    laboriosam nemo, totam esse atque omnis veniam nulla at. Eos
+                    soluta a aspernatur dicta. A blanditiis libero reprehenderit
+                    atque. Similique debitis iure, eaque qui non minima libero,
+                    est nostrum in maxime ab repellendus quod, temporibus autem
+                    illo alias distinctio placeat! Nisi similique id cum magnam
+                    reiciendis voluptate dolore eos architecto alias ducimus
+                    vitae corporis vel rem ea repudiandae cupiditate, numquam
+                    pariatur, rerum tempora placeat obcaecati exercitationem?
+                    Provident sed fugiat temporibus dignissimos! Cum explicabo
+                    aliquam error omnis alias, eveniet optio! Neque labore
+                    reprehenderit officia quas nobis sunt obcaecati, tenetur
+                    tempora dignissimos consequuntur mollitia illum odit autem
+                    repudiandae commodi quisquam amet. Iste quisquam molestias,
+                    earum dolorem quos tempore accusamus amet sint at nemo
+                    ipsum! Cupiditate vel ex nam animi eum, maxime minus a
+                    reiciendis id aliquam beatae sit labore fugit, magni eaque
+                    nobis odio dolorum saepe obcaecati illo recusandae possimus
+                    mollitia eligendi et? Neque repellat modi amet sit atque
+                    nisi, aspernatur, vero sequi debitis possimus excepturi,
+                    dolorem perspiciatis saepe earum fugiat repellendus fuga
+                    ipsa. Quisquam dolor, aperiam, fugit vitae facere,
+                    voluptates provident nesciunt qui eveniet doloremque natus
+                    ut. Id nihil explicabo amet aperiam? Porro eos voluptate
+                    deserunt cupiditate consectetur expedita cumque.
+                    Reprehenderit odio fuga tempora excepturi. Cumque velit at
+                    doloremque officia amet totam ipsum aliquam assumenda modi?
+                    Obcaecati unde magnam sequi veritatis quam quia quas maiores
+                    amet, quasi error ipsum, ab est aliquam fugiat quaerat,
+                    incidunt temporibus repellendus quos cumque veniam qui iste
+                    illum deserunt quae. Natus sint, perferendis eveniet dolorum
+                    distinctio officia aliquid explicabo reiciendis ab vero
+                    dolore doloribus sapiente velit ut assumenda omnis maiores
+                    amet nesciunt qui aspernatur iure deleniti, maxime, odit
+                    dolores? Dicta tempora quia eligendi necessitatibus adipisci
+                    nulla asperiores deleniti, vero, inventore dignissimos, unde
+                    modi delectus maiores ipsam explicabo perspiciatis nemo fuga
+                    earum consequuntur culpa nesciunt libero labore? Illo non
+                    sit saepe neque nihil aliquam rem deleniti in nulla? Ratione
+                    natus autem beatae minima sunt sapiente cumque atque facilis
+                    aliquam rerum harum nostrum assumenda, reiciendis soluta
+                    optio! Eaque dicta nemo harum magni consectetur nostrum?
+                    Exercitationem nemo velit id fugit non mollitia repellendus
+                    architecto libero dignissimos voluptatum impedit ipsa ipsam
+                    iusto consequatur iure asperiores provident natus rem minima
+                    eveniet neque reiciendis quisquam, culpa adipisci! Ab
+                    voluptate cupiditate qui, numquam dolorem, beatae maiores
+                    provident vel necessitatibus facilis laudantium rerum
+                    aperiam. Hic, est voluptatem incidunt ab sint dicta
+                    necessitatibus? Aperiam dolore expedita illum porro eos
+                    facilis impedit alias et molestiae ad sequi cumque
+                    exercitationem sed reiciendis natus perferendis, quasi
+                    asperiores laboriosam, illo minus dolor harum? Nesciunt quas
+                    tenetur recusandae, maiores veniam dolorum repellendus,
+                    perspiciatis, eos itaque totam sequi iusto soluta a incidunt
+                    velit rerum porro eius! Voluptas, optio ducimus veritatis
+                    hic, nisi quia iste in blanditiis a dolorem consequatur
+                    ipsa! Veniam culpa deleniti, deserunt natus dolorum maxime
+                    labore accusantium consequatur voluptatem hic. Ad
+                    consequuntur odit, culpa voluptates quia dolorum officiis at
+                    debitis illo ipsum consequatur alias quasi saepe pariatur
+                    vitae veniam? Dolore ratione enim unde velit sint, laborum
+                    fuga quas ipsam consequuntur at sed nisi quo saepe, porro
+                    nam. Velit, explicabo distinctio! Maxime accusamus quis
+                    harum minus cumque neque est, ut aliquid obcaecati expedita
+                    sed iusto odit sapiente blanditiis perferendis, doloremque
+                    ratione facere et cum quaerat. Ducimus tempora, tempore
+                    quasi voluptas, eos a ratione aliquam delectus animi
+                    aspernatur quia commodi quod dolore, corrupti neque! Error
+                    quasi modi eveniet omnis corporis nobis, ut distinctio.
+                    Provident nemo necessitatibus, dolorem temporibus autem
+                    doloribus vero ipsa soluta magni, iste eum esse placeat
+                    voluptate voluptatum similique aut nobis quos, ad minima
+                    laboriosam velit harum! Voluptas cupiditate quaerat porro
+                    provident velit repellendus quasi consectetur temporibus
+                    autem? Temporibus aut aliquam dignissimos consectetur
+                    deleniti id excepturi maxime officia saepe quod, pariatur ea
+                    sapiente suscipit, error esse accusamus velit ipsam animi
+                    repellendus. Neque quis voluptas sapiente. Pariatur error ex
+                    accusantium? Sit esse natus facilis atque id deserunt
+                    laborum, ducimus inventore adipisci nam, rem tempora est
+                    nesciunt odio distinctio. Cupiditate beatae amet consequatur
+                    facere, nemo, consequuntur recusandae voluptatibus
+                    voluptates sit libero aut mollitia illo odit quasi illum
+                    magnam aperiam atque autem. Qui quis, obcaecati
+                    reprehenderit fugiat voluptas ducimus dignissimos
+                    exercitationem, doloribus delectus error cumque quae harum
+                    cupiditate eaque, voluptatem maxime. Sit ad fuga corporis
+                    consequuntur harum nobis tempore maiores repellat id
+                    voluptas veniam consectetur unde, rem porro enim ab
+                    recusandae itaque eligendi minus odit ut repellendus,
+                    quibusdam excepturi fugiat! Consequuntur maxime corporis
+                    necessitatibus eveniet expedita quod neque voluptate, sint
+                    in et recusandae facilis eaque nam! Accusamus itaque
+                    quisquam ea veritatis enim tempora nam facere tempore unde
+                    mollitia reprehenderit doloribus illum neque, magni ipsam
+                    omnis dolorum error, fugiat nemo commodi? Sed, maiores
+                    placeat, neque fugiat magni, perspiciatis suscipit aperiam
+                    delectus id atque rerum quibusdam dolorem. Corporis ea eos
+                    culpa at fugit officiis error, facere enim quisquam libero
+                    suscipit? Nisi consectetur, laboriosam libero ipsa sed
+                    officia explicabo veritatis.
+                </div>
+            </section>
+        </main>
+        <footer>Footer</footer>
         <!-- Tailwind CSS & Alpine.js -->
         <script type="module" src="/src/main.js"></script>
     </body>

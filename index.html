@@ -1,12 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html
+    x-data="htmlData()"
+    x-init="window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => setSystemTheme(e.matches ? 'dark' : 'light'))"
+    class="bg-white dark:bg-black"
+    :class="{ dark: darkMode }"
+    lang="en"
+>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
     </head>
-    <body>
-        <h1 class="text-3xl text-red-700">Hello World!</h1>
+    <body class="bg-white dark:bg-black">
+        <h1 class="text-3xl text-red-700 dark:text-blue-700">Hello World!</h1>
 
         <!-- Tailwind CSS & Alpine.js -->
         <script type="module" src="/src/main.js"></script>

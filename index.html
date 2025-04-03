@@ -3,7 +3,7 @@
     data-theme=""
     x-data="htmlData()"
     x-init="window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => setSystemTheme(e.matches ? 'dark' : 'light'))"
-    class="bg-body dark:bg-body-dark scroll-smooth antialiased"
+    class="bg-body dark:bg-body-dark min-h-screen scroll-smooth antialiased"
     :class="{ dark: darkMode }"
     lang="de"
 >
@@ -21,7 +21,9 @@
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
     </head>
-    <body class="bg-body dark:bg-body-dark text-text dark:text-text-inverted">
+    <body
+        class="bg-body dark:bg-body-dark text-text dark:text-text-inverted min-h-screen"
+    >
         <!-- Header -->
         <header
             x-data="{ isMenuOpen: false }"
@@ -225,7 +227,7 @@
                         >
                             <span class="sr-only">StataRocket Design</span>
                             <svg
-                                class="text-menu dark:text-menu-inverted size-10"
+                                class="text-menu dark:text-menu-inverted size-12"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -546,7 +548,7 @@
                                             StataRocket Design
                                         </span>
                                         <svg
-                                            class="text-menu dark:text-menu-inverted size-10"
+                                            class="text-menu dark:text-menu-inverted size-12"
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
                                             viewBox="0 0 24 24"
@@ -730,7 +732,53 @@
                 </div>
             </div>
         </header>
-        <main class="pt-32 pb-16">
+        <main class="isolate min-h-screen">
+            <!-- Hero -->
+            <div
+                class="bg-header dark:bg-header-dark flex min-h-screen flex-col"
+            >
+                <div class="relative mt-[120px] flex grow">
+                    <div
+                        class="bg-body dark:bg-body-dark absolute inset-x-0 bottom-0 h-1/2"
+                    ></div>
+                    <div class="mx-auto flex max-w-7xl grow sm:p-6 lg:px-8">
+                        <div
+                            class="relative flex grow items-center justify-center shadow-lg sm:overflow-hidden sm:rounded-2xl"
+                        >
+                            <div class="absolute inset-0">
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="https://cdn.pixabay.com/photo/2024/07/02/09/14/rocket-8867187_960_720.jpg"
+                                    alt="StataRocket"
+                                />
+                            </div>
+                            <div
+                                class="bg-hero-blend dark:bg-hero-blend-dark absolute inset-0 opacity-70 mix-blend-multiply"
+                            ></div>
+                            <div
+                                class="relative flex flex-col gap-6 px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-32"
+                            >
+                                <h1
+                                    class="text-heading-inverted text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
+                                >
+                                    StataRocket
+                                </h1>
+                                <h2
+                                    class="text-text-hero dark:text-text-hero-inverted text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl"
+                                >
+                                    A StarterKit for Statamic
+                                </h2>
+                                <p
+                                    class="text-text-hero dark:text-text-hero-inverted mx-auto max-w-lg text-xl font-semibold sm:max-w-3xl"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Incidunt, qui!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <section>
                 <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
@@ -866,7 +914,7 @@
                 </div>
             </section>
         </main>
-        <footer>Footer</footer>
+        <footer class="relative">Footer</footer>
         <!-- Tailwind CSS & Alpine.js -->
         <script type="module" src="/src/main.js"></script>
     </body>

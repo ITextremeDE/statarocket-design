@@ -12,6 +12,14 @@
   --color-body-dark: oklch(0.129 0.042 264.695); /* slate-950 */
   --color-header: oklch(0.293 0.066 243.157); /* sky-950 */
   --color-header-dark: oklch(0.208 0.042 265.755); /* slate-900 */
+  --color-border: oklch(0.929 0.013 255.508); /* slate-200 */
+  --color-border-alt: oklch(0.704 0.04 256.788); /*slate-400 */
+  --color-border-dark: oklch(0.129 0.042 264.695); /* slate-950 */
+  --color-element: oklch(100% 0 0); /* white */
+  --color-element-dark: oklch(0.279 0.041 260.031); /* slate-800 */
+  --color-element-alt: oklch(0.869 0.022 252.894); /* slate-300 */
+  --color-footer: oklch(0.869 0.022 252.894); /* slate-300 */
+  --color-footer-dark: oklch(0.208 0.042 265.755); /* slate-900 */
 
   --color-themepicker-icon: oklch(0.704 0.04 256.788); /* slate-400 */
   --color-themepicker-icon-bg: oklch(100% 0 0); /* white */
@@ -30,14 +38,27 @@
   --color-menu-button-bg: oklch(0.372 0.044 257.287); /* slate-700 */
   --color-menu-button-bg-hover: oklch(0.279 0.041 260.031); /* slate-800 */
 
+  --color-hero-blend: oklch(0.901 0.058 230.902); /* sky-200 */
+  --color-hero-blend-dark: oklch(0.446 0.043 257.281); /* slate-600 */
+  --color-image-blend: oklch(0.977 0.013 236.62); /* sky-50 */
+  --color-image-blend-dark: oklch(0.929 0.013 255.508); /* slate-200 */
+
   --color-heading: oklch(0.208 0.042 265.755); /* slate-900 */
   --color-heading-inverted: oklch(100% 0 0); /* white */
+  --color-text-hero: oklch(0.929 0.013 255.508); /* slate-200 */
+  --color-text-hero-inverted: oklch(0.901 0.058 230.902); /* sky-200 */
   --color-text: oklch(0.446 0.043 257.281); /* slate-600 */
   --color-text-inverted: oklch(0.704 0.04 256.788); /* slate-400 */
+  --color-text-muted: oklch(0.554 0.046 257.417); /* slate-500 */
   --color-menu: oklch(100% 0 0); /* white */
   --color-menu-hover: oklch(0.869 0.022 252.894); /* slate-300 */
   --color-menu-inverted: oklch(0.929 0.013 255.508); /* slate-200 */
   --color-menu-inverted-hover: oklch(0.869 0.022 252.894); /* slate-300 */
   --color-submenu: oklch(0.372 0.044 257.287); /* slate-700 */
   --color-submenu-inverted: oklch(0.704 0.04 256.788); /* slate-400 */
+
+  --color-text-form-input: oklch(0.208 0.042 265.755); /* slate-900 */
+  --color-text-form-input-inverted: oklch(100% 0 0); /* white */
+  --color-form-ring: oklch(0.869 0.022 252.894); /* slate-300 */
+  --color-form-ring-dark: oklch(0.129 0.042 264.695); /* slate-950 */
 }

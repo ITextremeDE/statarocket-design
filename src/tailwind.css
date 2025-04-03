@@ -21,6 +21,17 @@
   --color-themepicker-bg-hover: oklch(0.968 0.007 247.896); /* slate-100 */
   --color-themepicker-bg-hover-dark: oklch(0.208 0.042 265.755); /* slate-900 */
 
+  --color-menu-bg: oklch(100% 0 0); /* white */
+  --color-menu-bg-dark: oklch(0.279 0.041 260.031); /* slate-800 */
+  --color-menu-text-bg-hover: oklch(0.968 0.007 247.896); /* slate-100 */
+  --color-menu-text-bg-hover-dark: oklch(0.208 0.042 265.755); /* slate-900 */
+
+  --color-menu-button-icon: oklch(0.704 0.04 256.788); /* slate-400 */
+  --color-menu-button-bg: oklch(0.372 0.044 257.287); /* slate-700 */
+  --color-menu-button-bg-hover: oklch(0.279 0.041 260.031); /* slate-800 */
+
+  --color-heading: oklch(0.208 0.042 265.755); /* slate-900 */
+  --color-heading-inverted: oklch(100% 0 0); /* white */
   --color-text: oklch(0.446 0.043 257.281); /* slate-600 */
   --color-text-inverted: oklch(0.704 0.04 256.788); /* slate-400 */
   --color-menu: oklch(100% 0 0); /* white */

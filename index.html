@@ -3,7 +3,7 @@
     data-theme=""
     x-data="htmlData()"
     x-init="window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => setSystemTheme(e.matches ? 'dark' : 'light'))"
-    class="bg-body dark:bg-body-dark min-h-dvh scroll-smooth antialiased"
+    class="bg-body dark:bg-body-dark min-h-lvh scroll-smooth antialiased"
     :class="{ dark: darkMode }"
     lang="de"
 >
@@ -22,7 +22,7 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
     </head>
     <body
-        class="bg-body dark:bg-body-dark text-text dark:text-text-inverted min-h-dvh"
+        class="bg-body dark:bg-body-dark text-text dark:text-text-inverted min-h-lvh"
     >
         <!-- Header -->
         <header
@@ -732,9 +732,9 @@
                 </div>
             </div>
         </header>
-        <main class="isolate min-h-dvh">
+        <main class="isolate min-h-lvh">
             <!-- Hero -->
-            <div class="bg-header dark:bg-header-dark flex min-h-dvh flex-col">
+            <div class="bg-header dark:bg-header-dark flex min-h-lvh flex-col">
                 <div class="relative mt-[120px] flex grow">
                     <div
                         class="bg-body dark:bg-body-dark absolute inset-x-0 bottom-0 h-1/2"

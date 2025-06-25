@@ -381,14 +381,14 @@
                 <!-- Background backdrop, show/hide based on slide-over state. -->
                 <div class="fixed inset-0 z-10 backdrop-blur"></div>
                 <div
-                    class="bg-header dark:bg-header-dark fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-4 py-2 sm:max-w-sm sm:px-6 sm:ring-1 sm:ring-black/10"
+                    class="bg-header dark:bg-header-dark fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-4 sm:max-w-sm sm:px-6 sm:ring-1 sm:ring-black/10"
                 >
                     <div class="flex h-full flex-col justify-between">
                         <!-- Top Bar, Theme picker, Logo & Menu -->
                         <div>
                             <!-- Top Bar -->
                             <div
-                                class="flex items-center justify-between sm:justify-end"
+                                class="flex items-center justify-between py-2 sm:justify-end"
                             >
                                 <!-- Top Bar: Text -->
                                 <div
@@ -609,7 +609,7 @@
                                             <button
                                                 @click="isOpen = !isOpen"
                                                 type="button"
-                                                class="text-menu hover:text-menu-hover dark:text-menu-inverted dark:hover:text-menu-inverted-hover flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold"
+                                                class="text-menu dark:text-menu-inverted flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold"
                                                 aria-expanded="isOpen"
                                             >
                                                 MenuItem #1
@@ -649,13 +649,13 @@
                                             >
                                                 <a
                                                     href="#"
-                                                    class="text-primary hover:bg-menu-text-bg-hover dark:hover:bg-menu-text-bg-hover block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold"
+                                                    class="text-primary block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold"
                                                 >
                                                     SubMenuItem #1 (active)
                                                 </a>
                                                 <a
                                                     href="#"
-                                                    class="text-submenu-inverted hover:bg-menu-text-bg-hover dark:hover:bg-menu-text-bg-hover block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold"
+                                                    class="text-submenu-inverted block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold"
                                                 >
                                                     SubMenuItem #2
                                                 </a>
@@ -663,7 +663,7 @@
                                         </div>
                                         <a
                                             href="#"
-                                            class="text-menu dark:text-menu-inverted hover:bg-menu-text-bg-hover dark:hover:bg-menu-text-bg-hover -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold"
+                                            class="text-menu dark:text-menu-inverted -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold"
                                         >
                                             MenuItem #2
                                         </a>
@@ -768,7 +768,7 @@
                                     A StarterKit for Statamic
                                 </h2>
                                 <p
-                                    class="text-text-hero dark:text-text-hero-inverted mx-auto max-w-lg text-xl font-semibold sm:max-w-3xl"
+                                    class="text-text-hero dark:text-text-hero-inverted max-w-lg text-xl font-semibold sm:max-w-3xl"
                                 >
                                     Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Incidunt, qui!
@@ -800,6 +800,7 @@
         </main>
         <!-- Footer -->
         <footer class="bg-footer dark:bg-footer-dark relative">
+            <!-- Container -->
             <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
                 <!-- Secondary Menu -->
                 <nav

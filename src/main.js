@@ -4,6 +4,8 @@ import "./tailwind.css";
 // Alpine.js
 import Alpine from "alpinejs";
 
+window.Alpine = Alpine;
+
 window.htmlData = function () {
     return {
         themePreference: localStorage.getItem("theme") || "system",
@@ -27,5 +29,4 @@ window.htmlData = function () {
     };
 };
 
-window.Alpine = Alpine;
 Alpine.start();
